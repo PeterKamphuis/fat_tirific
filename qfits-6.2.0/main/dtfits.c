@@ -33,6 +33,7 @@
 #include <string.h>
 
 #include "qfits_table.h"
+#include "qfits_tools.h"
 
 /*-----------------------------------------------------------------------------
                                    Define

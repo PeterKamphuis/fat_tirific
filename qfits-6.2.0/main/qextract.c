@@ -32,6 +32,7 @@
 #include "qfits_table.h" 
 #include "qfits_image.h" 
 #include "qfits_rw.h" 
+#include "qfits_tools.h"
 
 /*-----------------------------------------------------------------------------
                                Function prototypes
