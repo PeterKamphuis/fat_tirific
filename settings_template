@@ -37,28 +37,28 @@ MATHDIR = /usr/include/
 FFTWDIR = /usr/include/
 
 # This is the position of the parent directory of the gsl directory
-GSLDIR = /dop237_1/jozsa/libs/include
+GSLDIR = /usr/include/
 
 # This is the directory in which the wcs include files reside
-WCSDIR = /usr/local/include/wcslib
-
-# external libraries
+WCSDIR = /usr/include/wcslib
 
 # The math library
-MATHLIB = 
+MATHLIB = -lm
 
 # The fftw3f library, alternatively
 # -Ldirectory_in_which_the_file_libfftw3f.a_is -lfftw3f
-FFTWLIB = -lfftw3f -lfftw3
+FFTWLIB = -L/usr/local/lib/ -lfftw3f -lfftw3
 
 # The gsl library linker flags-, alternatively
-GSLLIB = -L/dop237_1/jozsa/libs/lib -lgsl -lgslcblas
+GSLLIB = -L/usr/local/lib/ -lgsl -lgslcblas
 
 # The wcs library
+
+
 WCSLIB = -L/usr/local/lib/ -lwcs
 
 # Pgplot linker flags, for Mac OS, maybe -L$(PGPDIR) -lcpgplot -lpgplot $(X11LIB) -lpng -laquaterm -Wl,-framework -Wl,Foundation  -W1,-AppKit 
-PGPLIB = -L$(PGPDIR) -lcpgplot -lpgplot -L/usr/X11R6/lib -lX11
+PGPLIB = -L/usr/local/lib/ -lcpgplot -lpgplot -lX11
 
 # Readline library
 READLINELIB= -lreadline
