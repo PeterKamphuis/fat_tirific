@@ -432,7 +432,7 @@ This was commented hdu stuff
 /*
                tirific.dc1
 
-Program:       TIRIFIC (Version 2.3.12_fat)
+Program:       TIRIFIC (Version 2.3.14_fat)
 
 Purpose:       Fit a tilted-ring model to a datacube
 

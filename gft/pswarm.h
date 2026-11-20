@@ -65,6 +65,8 @@ enum { /* Status and exit codes */
 /* STRUCTS */
 /* ------------------------------------------------------------ */
 
+struct pswarm_swarm;
+
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /**
    @struct pswarm_options
@@ -112,7 +114,7 @@ typedef struct pswarm_options
   /** @brief print information each IPrint iterations */
   /* int IPrint;                      				     */
   /** @brief process pswarm_swarm members status and statusm, usually conditional print, by default pswarm_standardprint() */
-  int (*printfun)();               				    
+  int (*printfun)(struct pswarm_swarm *);               				    
   /** @brief Switch: objective function called with a vector of points */
   int vectorized;                  				    
   /** @brief Input seed for quasi-rng */

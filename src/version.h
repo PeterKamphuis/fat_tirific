@@ -7,7 +7,7 @@
 #ifndef VERSION_H
 #define VERSION_H
 
-#define TIRIFIC_VERSION "2.3.13_fat"
+#define TIRIFIC_VERSION "2.3.14_fat"
 
 /**
  * @brief Get the version string
